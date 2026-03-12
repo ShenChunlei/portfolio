@@ -1,15 +1,14 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Database, Radio, LayoutGrid } from 'lucide-react';
-import ProjectDetailModal from './ProjectDetailModal';
+import { ExternalLink, Github, Database, Radio } from 'lucide-react';
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<any>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const projects = [
     {
@@ -38,9 +37,8 @@ const Projects = () => {
     }
   ];
 
-  const handleOpenDetails = (project: any) => {
-    setSelectedProject(project);
-    setIsModalOpen(true);
+  const handleOpenDetails = (projectId: string) => {
+    navigate(`/project/${projectId}`);
   };
 
   return (
@@ -99,10 +97,10 @@ const Projects = () => {
                     <Github size={16} /> Repository
                   </a>
                   <button 
-                    onClick={() => handleOpenDetails(project)}
+                    onClick={() => handleOpenDetails(project.id)}
                     className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors"
                   >
-                    <ExternalLink size={16} /> Project Details
+                    <ExternalLink size={16} /> Case Study
                   </button>
                 </CardFooter>
               </Card>
@@ -110,12 +108,6 @@ const Projects = () => {
           ))}
         </div>
       </div>
-
-      <ProjectDetailModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        project={selectedProject} 
-      />
     </section>
   );
 };
