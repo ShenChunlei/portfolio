@@ -7,20 +7,20 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const categories = [
     {
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Framer Motion"]
+      title: "Geospatial & 3D",
+      skills: ["CesiumJS", "Three.js", "Mapbox GL JS", "ArcGIS API", "PostGIS", "Deck.gl"]
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express", "Python", "Go", "PostgreSQL", "Redis"]
+      title: "IoT & Real-time",
+      skills: ["MQTT / Mosquitto", "WebSockets", "Apache Kafka", "InfluxDB", "AWS IoT Core", "Node-RED"]
     },
     {
-      title: "Tools & DevOps",
-      skills: ["Docker", "AWS", "Git", "GitHub Actions", "Terraform", "Vercel"]
+      title: "Data & Backend",
+      skills: ["Python (GDAL/Pandas)", "Node.js", "Go", "PostgreSQL", "Redis", "gRPC"]
     },
     {
-      title: "Design",
-      skills: ["Figma", "UI/UX Design", "Responsive Design", "Accessibility"]
+      title: "Digital Twin Standards",
+      skills: ["BIM (IFC/Revit)", "CityGML", "3D Tiles", "DTDL", "Point Cloud Data"]
     }
   ];
 
@@ -28,9 +28,7 @@ const Skills = () => {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.1 }
     }
   };
 
@@ -40,11 +38,11 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-24 px-4">
+    <section id="skills" className="py-24 px-4 bg-slate-950">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Technical Stack</h2>
-          <p className="text-slate-600 dark:text-slate-400">The tools and technologies I use to bring ideas to life.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Technical Ecosystem</h2>
+          <p className="text-slate-500">The technology stack I use to synchronize physical and digital worlds.</p>
         </div>
 
         <motion.div 
@@ -52,14 +50,14 @@ const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {categories.map((cat, idx) => (
-            <motion.div key={idx} variants={item} className="p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-bold text-indigo-600 mb-4 uppercase tracking-wider text-sm">{cat.title}</h3>
+            <motion.div key={idx} variants={item} className="p-6 rounded-2xl border border-slate-800 bg-slate-900 shadow-xl group hover:border-emerald-500/50 transition-all">
+              <h3 className="font-bold text-emerald-400 mb-6 uppercase tracking-widest text-xs">{cat.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors">
+                  <Badge key={skill} variant="secondary" className="bg-slate-800 text-slate-300 border border-slate-700 hover:bg-emerald-900/30 hover:text-emerald-300 hover:border-emerald-500/30 transition-all duration-300">
                     {skill}
                   </Badge>
                 ))}

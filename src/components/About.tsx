@@ -3,26 +3,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
+import { Layers, Activity, Map } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-24 px-4 bg-slate-50 dark:bg-slate-900/50">
+    <section id="about" className="py-24 px-4 bg-slate-900 border-y border-slate-800">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="relative"
           >
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
-                alt="Profile" 
-                className="relative rounded-2xl object-cover w-full aspect-square shadow-2xl"
-              />
-            </div>
+            <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-cyan-500 opacity-20 blur-2xl rounded-3xl" />
+            <img 
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop" 
+              alt="Digital Twin Visualization" 
+              className="relative rounded-2xl object-cover w-full aspect-[4/5] shadow-2xl border border-slate-700"
+            />
           </motion.div>
           
           <motion.div
@@ -31,27 +31,31 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">About Me</h2>
-            <div className="space-y-4 text-slate-600 dark:text-slate-400">
+            <h2 className="text-sm font-bold text-emerald-500 tracking-widest uppercase mb-4">My Expertise</h2>
+            <h3 className="text-4xl font-bold text-white mb-6">Fusing Space with Time</h3>
+            <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
-                I am a software engineer with over 5 years of experience in creating scalable web solutions. My journey started when I built my first simple website in high school, and I haven't stopped learning since.
+                I specialize in creating <strong>Digital Twins</strong> that aren't just 3D models, but living systems. By integrating high-precision <strong>GIS geospatial data</strong> with real-time <strong>IoT connectivity</strong>, I help organizations visualize, monitor, and predict infrastructure health and urban dynamics.
               </p>
               <p>
-                I specialize in front-end development using React and Next.js, but I'm equally comfortable working on the back-end with Node.js and PostgreSQL. I love solving complex problems and turning ideas into reality through clean, efficient code.
+                My work focuses on the full data lifecycle: from processing massive BIM/GIS point clouds to architecting robust MQTT/WebSocket pipelines for thousands of concurrent sensors.
               </p>
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <Card className="border-none shadow-sm bg-white dark:bg-slate-800">
-                  <CardContent className="p-4">
-                    <p className="text-2xl font-bold text-indigo-600">5+</p>
-                    <p className="text-sm text-slate-500">Years Experience</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-none shadow-sm bg-white dark:bg-slate-800">
-                  <CardContent className="p-4">
-                    <p className="text-2xl font-bold text-indigo-600">20+</p>
-                    <p className="text-sm text-slate-500">Projects Completed</p>
-                  </CardContent>
-                </Card>
+              
+              <div className="grid grid-cols-1 gap-4 pt-4">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+                  <Map className="text-emerald-400 mt-1" size={24} />
+                  <div>
+                    <h4 className="font-bold text-white">Geospatial Intelligence</h4>
+                    <p className="text-sm">Expert in coordinate systems, GeoJSON, and dynamic tiling for large-scale maps.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+                  <Activity className="text-cyan-400 mt-1" size={24} />
+                  <div>
+                    <h4 className="font-bold text-white">Real-time IoT Streams</h4>
+                    <p className="text-sm">Implementing low-latency data ingestion from industrial sensors and edge devices.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
