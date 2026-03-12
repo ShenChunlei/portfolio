@@ -1,14 +1,19 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Database, Radio } from 'lucide-react';
+import { ExternalLink, Github, Database, Radio, LayoutGrid } from 'lucide-react';
+import ProjectDetailModal from './ProjectDetailModal';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const projects = [
     {
+      id: "traffic-twin",
       title: "Smart City Traffic Twin",
       description: "Real-time traffic flow visualization using Mapbox and live camera sensor data via MQTT. Includes predictive congestion modeling.",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
@@ -16,6 +21,7 @@ const Projects = () => {
       stats: { sensors: "500+", dataRate: "10ms" }
     },
     {
+      id: "industrial-monitor",
       title: "Industrial 3D Asset Monitor",
       description: "A high-fidelity Digital Twin of a manufacturing plant using CesiumJS. Integrates PLC data to monitor machine health in 3D space.",
       image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=800&auto=format&fit=crop",
@@ -23,6 +29,7 @@ const Projects = () => {
       stats: { assets: "1200+", latency: "<100ms" }
     },
     {
+      id: "environmental-twin",
       title: "Geo-Spatial Environmental Twin",
       description: "Environmental monitoring system aggregating air quality, humidity, and temperature sensors onto a 3D terrain model.",
       image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=800&auto=format&fit=crop",
@@ -30,6 +37,11 @@ const Projects = () => {
       stats: { coverage: "25km²", nodes: "250" }
     }
   ];
+
+  const handleOpenDetails = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
 
   return (
     <section id="projects" className="py-24 px-4 bg-slate-900/50">
@@ -86,15 +98,24 @@ const Projects = () => {
                   <a href="#" className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors">
                     <Github size={16} /> Repository
                   </a>
-                  <a href="#" className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors">
+                  <button 
+                    onClick={() => handleOpenDetails(project)}
+                    className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors"
+                  >
                     <ExternalLink size={16} /> Project Details
-                  </a>
+                  </button>
                 </CardFooter>
               </Card>
             </motion.div>
           ))}
         </div>
       </div>
+
+      <ProjectDetailModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        project={selectedProject} 
+      />
     </section>
   );
 };
