@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
-import { ExternalLink, ImageOff } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const Projects = () => {
       id: "nus-virtual-campus",
       title: "NUS Virtual Campus",
       description: "An interactive digital twin installation showcasing the NUS campus in real time. Visitors navigate the campus using a touchscreen interface, while the 3D environment is projected onto a large public display in University Hall.",
-      image: "/image/screenshots/nus/nus-lod1.jpg",
+      image: "image/screenshots/nus/nus-lod1.jpg",
       tags: ["IOT", "REST API", "WebSocket", "Touch Screen", "Google API", "Digital Twin", "Data Visualization", "BIM"],
     },
     {
@@ -98,14 +98,13 @@ const Projects = () => {
                     alt={project.title} 
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
-                      // 如果加载失败，显示一个占位色块和图标
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
                       const parent = target.parentElement;
                       if (parent) {
                         const fallback = document.createElement('div');
-                        fallback.className = 'flex flex-col items-center justify-center text-slate-600';
-                        fallback.innerHTML = '<div class="mb-2 text-slate-700">Image not found</div>';
+                        fallback.className = 'flex flex-col items-center justify-center text-slate-600 p-4 text-center';
+                        fallback.innerHTML = '<div class="text-xs uppercase font-bold text-slate-500 mb-1">Preview Unavailable</div><div class="text-[10px] text-slate-700">' + project.image + '</div>';
                         parent.appendChild(fallback);
                       }
                     }}
