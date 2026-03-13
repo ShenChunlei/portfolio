@@ -24,7 +24,7 @@ const ProjectDetail = () => {
       screenshots: [
         { url: "image/screenshots/nus/nus-lod1.jpg", title: "Campus Overview", desc: "Large scale LOD1 visualization of the entire NUS campus." },
         { url: "image/screenshots/nus/nus-bim-overview.jpg", title: "BIM Integration", desc: "Detailed architectural models integrated into the spatial map." },
-        { url: "image/screenshots/nus/nus-heatmap.jpg", title: "Population Heatmap", desc: "Real-time occupancy data visualized across campus facilities." },
+        { url: "image/screenshots/nus/nus-heatmap.jpg", title: "Hot Spots Heatmap", desc: "Real-time occupancy data visualized across campus facilities." },
         { url: "image/screenshots/nus/nus-iot-weather-sensor.jpg", title: "IoT Weather Data", desc: "Live sensor feeds from weather stations integrated into the 3D scene." }
       ]
     },
