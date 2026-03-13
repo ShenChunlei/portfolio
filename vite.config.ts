@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: '/', // 根域名部署使用 / 最稳妥
+  // 将基础路径设置为仓库名称，这样打包后的资源引用路径才会正确
+  base: '/portfolio/', 
   server: {
     host: "::",
     port: 8080,
