@@ -9,19 +9,19 @@ const Experience = () => {
       role: "Lead Digital Twin Engineer",
       company: "GeoStream Analytics",
       period: "2022 - Present",
-      description: "Developing a city-level digital twin platform. Orchestrated the ingestion of 5M+ IoT data points daily across 200km² of GIS terrain using Apache Kafka and CesiumJS."
+      description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
     },
     {
       role: "Geospatial Systems Developer",
       company: "SmartCity Labs",
       period: "2020 - 2022",
-      description: "Built custom GIS tools for urban planning. Integrated real-time parking and utility sensors with ArcGIS dashboards, reducing response times for city services by 30%."
+      description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
     },
     {
       role: "IoT Solutions Engineer",
       company: "SensorGrid Tech",
       period: "2018 - 2020",
-      description: "Architected end-to-end IoT solutions for industrial monitoring. Specialized in MQTT protocol optimization and time-series data visualization in web-based dashboards."
+      description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
     }
   ];
 
