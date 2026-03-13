@@ -28,10 +28,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # 删除了 cache 选项，因为它需要 lock 文件
 
       - name: Install dependencies
-        run: npm install # 将 npm ci 改为 npm install，因为它不需要 lock 文件
+        run: npm install --legacy-peer-deps # 添加此参数以解决 React 19 依赖冲突
 
       - name: Build project
         run: npm run build
@@ -42,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # 告诉 GitHub 只发布打包后的 dist 文件夹
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
