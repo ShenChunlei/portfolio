@@ -41,14 +41,14 @@ const About = () => {
                 <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
                   <Activity className="text-emerald-400 mt-1" size={24} />
                   <div>
-                    <h4 className="font-bold text-white">Senior Digital Twin Engineer</h4>
+                    <h4 className="font-bold text-white">Senior Digital Twin</h4>
                     <p className="text-sm">Building Living Digital Twins of the Physical World.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
                   <Map className="text-cyan-400 mt-1" size={24} />
                   <div>
-                    <h4 className="font-bold text-white">Geospatial Systems Engineer</h4>
+                    <h4 className="font-bold text-white">Geospatial Systems</h4>
                     <p className="text-sm">Transforming Spatial Data into Intelligent Systems.</p>
                   </div>
                 </div>
