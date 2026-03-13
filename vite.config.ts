@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(() => ({
+  // 设置为相对路径，这样无论部署在哪个子路径下都能正确加载资源
+  base: "./",
   server: {
     host: "::",
     port: 8080,
