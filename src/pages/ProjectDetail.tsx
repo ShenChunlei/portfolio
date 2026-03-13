@@ -3,20 +3,19 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
+import { Button } from "../components/ui/button";
 import { 
   Map, Cpu, Zap, BarChart3, Globe, Shield, 
   Image as ImageIcon, Maximize2, ArrowLeft, Github, ExternalLink 
 } from 'lucide-react';
-import Navbar from '@/components/Navbar';
+import Navbar from '../components/Navbar';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
 
-  // 模拟数据源
   const projectsData: Record<string, any> = {
     "traffic-twin": {
       title: "Smart City Traffic Twin",
@@ -68,7 +67,6 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
       
-      {/* Hero Banner */}
       <div className="relative h-[60vh] w-full overflow-hidden">
         <img 
           src={project.image} 
@@ -229,7 +227,6 @@ const ProjectDetail = () => {
         </Tabs>
       </main>
       
-      {/* Footer CTA */}
       <section className="py-24 border-t border-slate-900 bg-slate-950 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Interested in this project?</h2>
