@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layers, Activity, Map } from 'lucide-react';
+import { Activity, Map } from 'lucide-react';
 
 const About = () => {
   return (
@@ -39,17 +39,17 @@ const About = () => {
               
               <div className="grid grid-cols-1 gap-4 pt-4">
                 <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
-                  <Map className="text-emerald-400 mt-1" size={24} />
+                  <Activity className="text-emerald-400 mt-1" size={24} />
                   <div>
-                    <h4 className="font-bold text-white">Geospatial Intelligence</h4>
-                    <p className="text-sm">Expert in coordinate systems, GeoJSON, and dynamic tiling for large-scale maps.</p>
+                    <h4 className="font-bold text-white">Senior Digital Twin Engineer</h4>
+                    <p className="text-sm">Building Living Digital Twins of the Physical World.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
-                  <Activity className="text-cyan-400 mt-1" size={24} />
+                  <Map className="text-cyan-400 mt-1" size={24} />
                   <div>
-                    <h4 className="font-bold text-white">Real-time IoT Streams</h4>
-                    <p className="text-sm">Implementing low-latency data ingestion from industrial sensors and edge devices.</p>
+                    <h4 className="font-bold text-white">Geospatial Systems Engineer</h4>
+                    <p className="text-sm">Transforming Spatial Data into Intelligent Systems.</p>
                   </div>
                 </div>
               </div>
