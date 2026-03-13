@@ -154,8 +154,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/madinah/madinah-lod2-night.jpg",
       tags: ["Day-Night Simulation", "Smart City"],
       features: [
-        { title: "Dynamic Lighting Environment", desc: "Accurate solar positioning and atmospheric simulation for urban planning." },
-        { title: "Visual Fidelity", desc: "High-end architectural visualization within a performance-critical GIS framework." }
+        { title: "Large-Scale City Visualization", desc: "Developed a large-scale 3D digital twin of Madinah for the LEAP exhibition using geospatial city data." },
+        { title: "Dynamic Day–Night Simulation", desc: "Implemented dynamic lighting systems to simulate day–night transitions within the city-scale environment." },
+        { title: "Exhibition Display System", desc: "Designed the digital twin for large-scale exhibition display showcasing immersive city visualization." },
+        { title: "Geospatial Environment Integration", desc: "Integrated geospatial datasets to support accurate city-scale representation in the digital twin environment." }
       ],
       screenshots: [
         { url: "image/screenshots/madinah/madinah-lod2-night.jpg", title: "Night View", desc: "Atmospheric night simulation with dynamic lighting." },
