@@ -129,7 +129,7 @@ const Projects = () => {
                     onClick={() => navigate(`/project/${project.id}`)} 
                     className="flex items-center gap-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
                   >
-                    <ExternalLink size={16} /> View Case Study
+                    <ExternalLink size={16} /> View Project
                   </button>
                 </CardFooter>
               </Card>
