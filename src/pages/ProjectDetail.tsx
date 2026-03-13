@@ -21,6 +21,13 @@ const ProjectDetail = () => {
       description: "An interactive digital twin installation showcasing the NUS campus in real time. Visitors navigate the campus using a touchscreen interface, while the 3D environment is projected onto a large public display in University Hall.",
       image: "image/screenshots/nus/nus-lod1.jpg",
       tags: ["IOT", "REST API", "WebSocket", "BIM"],
+      features: [
+        { title: "Interactive Digital Twin Interface", desc: "Implemented a touchscreen-controlled interface allowing users to explore the campus digital twin projected onto a large public display." },
+        { title: "Real-Time 3D Geospatial Environment", desc: "Built a large-scale Unreal Engine 3D campus environment supporting spatial navigation and wayfinding." },
+        { title: "Data Integration Layer", desc: "Integrated traffic and environmental datasets to enable real-time operational monitoring within the digital twin." },
+        { title: "CMS Content Integration", desc: "Connected the platform with a CMS backend to support dynamic updates of campus information and spatial content." },
+        { title: "Rendering Optimization", desc: "Optimized scene streaming and LOD systems to maintain performance for large-scale campus visualization." }
+      ],
       screenshots: [
         { url: "image/screenshots/nus/nus-lod1.jpg", title: "Campus Overview", desc: "Large scale LOD1 visualization of the entire NUS campus." },
         { url: "image/screenshots/nus/nus-bim-overview.jpg", title: "BIM Integration", desc: "Detailed architectural models integrated into the spatial map." },
@@ -33,6 +40,10 @@ const ProjectDetail = () => {
       description: "Developed a plugin to stream GIS layers from headless QGIS into Unreal Engine with bidirectional synchronization.",
       image: "image/screenshots/gis/gis-vector-symbol.jpg",
       tags: ["GIS", "QGIS", "Unreal Engine", "Socket"],
+      features: [
+        { title: "Bidirectional Sync", desc: "Real-time synchronization between QGIS desktop and Unreal Engine environment." },
+        { title: "GIS Data Streaming", desc: "Direct streaming of vector and raster layers without manual export/import workflows." }
+      ],
       screenshots: [
         { url: "image/screenshots/gis/gis-vector-symbol.jpg", title: "Vector Symbolization", desc: "Styling GIS vector data within the Unreal Engine environment." },
         { url: "image/screenshots/gis/gis-raster.jpg", title: "Raster Mapping", desc: "Processing and rendering high-resolution terrain and imagery." },
@@ -44,6 +55,10 @@ const ProjectDetail = () => {
       description: "Built a real-time Unreal Engine digital twin platform for industrial infrastructure monitoring.",
       image: "image/screenshots/keppel/keppel-iot-facility-1.jpg",
       tags: ["IoT", "WebSocket", "Digital Twin"],
+      features: [
+        { title: "Asset Monitoring", desc: "Real-time health and status tracking of industrial equipment." },
+        { title: "Subsurface Visualization", desc: "Rendering complex underground utility networks with spatial accuracy." }
+      ],
       screenshots: [
         { url: "image/screenshots/keppel/keppel-iot-facility-1.jpg", title: "Facility Monitoring", desc: "Real-time status updates of industrial assets." },
         { url: "image/screenshots/keppel/keppel-pipe-visualization-1.jpg", title: "Subsurface Utility", desc: "Visualization of underground piping and infrastructure." }
@@ -54,6 +69,10 @@ const ProjectDetail = () => {
       description: "Developed LLM-assisted workflows to accelerate creation of real-time dashboards for spatial and IoT data visualization.",
       image: "image/screenshots/ai-assist/ai-assist-iot-cctv.jpg",
       tags: ["LLM", "AI", "IoT"],
+      features: [
+        { title: "LLM Orchestration", desc: "Using large language models to translate natural language queries into spatial data visualizations." },
+        { title: "Dynamic Widget Generation", desc: "Automated UI generation for IoT sensors based on semantic context." }
+      ],
       screenshots: [
         { url: "image/screenshots/ai-assist/ai-assist-dashboard.jpg", title: "AI Dashboard Generator", desc: "Automated widget creation based on natural language queries." },
         { url: "image/screenshots/ai-assist/ai-assist-iot-cctv.jpg", title: "Intelligent CCTV Sync", desc: "AI-driven camera switching based on detected events in 3D space." }
@@ -64,6 +83,10 @@ const ProjectDetail = () => {
       description: "GIS-based spatial analysis for KAEC using satellite imagery and urban datasets.",
       image: "image/screenshots/kaec/kaec-gis-1.jpg",
       tags: ["GIS Analysis", "Urban Planning"],
+      features: [
+        { title: "Spatial Assessment", desc: "In-depth analysis of land use and development patterns." },
+        { title: "Remote Sensing", desc: "Processing satellite data for infrastructure change detection." }
+      ],
       screenshots: [
         { url: "image/screenshots/kaec/kaec-gis-1.jpg", title: "Land Use Analysis", desc: "Spatial assessment of development phases." },
         { url: "image/screenshots/kaec/kaec-gis-2.jpg", title: "Satellite Imagery", desc: "Processing multi-spectral imagery for urban change detection." }
@@ -74,6 +97,10 @@ const ProjectDetail = () => {
       description: "Built a Singapore digital twin platform integrating real-time traffic and maritime data.",
       image: "image/screenshots/gitex/gitex-datamall-traffic.jpg",
       tags: ["DataMall API", "Maritime API", "Unreal Engine"],
+      features: [
+        { title: "City-Scale Integration", desc: "Connecting LTA DataMall and maritime APIs for a unified live city view." },
+        { title: "High-Traffic Simulation", desc: "Rendering thousands of dynamic agents based on real-world traffic telemetry." }
+      ],
       screenshots: [
         { url: "image/screenshots/gitex/gitex-datamall-traffic.jpg", title: "Traffic Intelligence", desc: "Live traffic flow from LTA DataMall." },
         { url: "image/screenshots/gitex/gitex-datamall-marine.jpg", title: "Maritime Monitoring", desc: "Real-time vessel tracking in Singapore waters." }
@@ -84,6 +111,10 @@ const ProjectDetail = () => {
       description: "Built a Bahrain government digital twin integrating healthcare and event monitoring datasets.",
       image: "image/screenshots/bahrain/bahrain-data-visualization.jpg",
       tags: ["GIS Visualization", "Data Analytics"],
+      features: [
+        { title: "Public Health Monitoring", desc: "Geospatial visualization of health metrics across administrative districts." },
+        { title: "National Analytics Hub", desc: "Centralized data pipeline for government-wide spatial decision support." }
+      ],
       screenshots: [
         { url: "image/screenshots/bahrain/bahrain-data-visualization.jpg", title: "Analytics Hub", desc: "Centralized dashboard for government metrics." },
         { url: "image/screenshots/bahrain/bahrain-data-heatmap.jpg", title: "Health Analytics", desc: "Heatmap visualization of epidemiological data." }
@@ -94,6 +125,10 @@ const ProjectDetail = () => {
       description: "Created a Riyadh digital twin platform for the LEAP exhibition featuring large-scale 3D city visualization.",
       image: "image/screenshots/leap/leap-facility.jpg",
       tags: ["Digital Twin", "Unreal Engine", "GIS"],
+      features: [
+        { title: "LOD Optimization", desc: "Handling massive city datasets with seamless Level of Detail transitions." },
+        { title: "Urban Simulation", desc: "Agent-based modeling of pedestrian and vehicle movement in high-density areas." }
+      ],
       screenshots: [
         { url: "image/screenshots/leap/leap-facility.jpg", title: "MISK City District", desc: "High-detail simulation of urban infrastructure." },
         { url: "image/screenshots/leap/leap-traffic.jpg", title: "City Traffic", desc: "Agent-based traffic simulation in the urban core." }
@@ -104,6 +139,10 @@ const ProjectDetail = () => {
       description: "Built a Madinah digital twin for the LEAP exhibition featuring dynamic day–night simulation.",
       image: "image/screenshots/madinah/madinah-lod2-night.jpg",
       tags: ["Day-Night Simulation", "Smart City"],
+      features: [
+        { title: "Dynamic Lighting Environment", desc: "Accurate solar positioning and atmospheric simulation for urban planning." },
+        { title: "Visual Fidelity", desc: "High-end architectural visualization within a performance-critical GIS framework." }
+      ],
       screenshots: [
         { url: "image/screenshots/madinah/madinah-lod2-night.jpg", title: "Night View", desc: "Atmospheric night simulation with dynamic lighting." },
         { url: "image/screenshots/madinah/madinah-lod2-day.jpg", title: "Day View", desc: "High-fidelity architectural visualization under daylight." }
@@ -204,20 +243,19 @@ const ProjectDetail = () => {
                   <Cpu className="text-emerald-400" /> Implementation Focus
                 </h3>
                 <div className="space-y-10">
-                  <div className="relative pl-8 border-l-2 border-emerald-500/20">
-                    <div className="absolute -left-1.5 top-0 w-3 h-3 bg-emerald-500 rounded-full" />
-                    <h5 className="text-xl font-bold mb-3">Real-time Data Integration</h5>
-                    <p className="text-slate-400 leading-relaxed">
-                      Leveraged modern protocols to bridge the gap between physical sensors and the digital model, ensuring sub-second latency for critical infrastructure monitoring.
-                    </p>
-                  </div>
-                  <div className="relative pl-8 border-l-2 border-cyan-500/20">
-                    <div className="absolute -left-1.5 top-0 w-3 h-3 bg-cyan-500 rounded-full" />
-                    <h5 className="text-xl font-bold mb-3">Geospatial Fidelity</h5>
-                    <p className="text-slate-400 leading-relaxed">
-                      Maintained high geographic accuracy by integrating multi-source GIS data directly into the rendering pipeline.
-                    </p>
-                  </div>
+                  {project.features ? (
+                    project.features.map((feature: any, idx: number) => (
+                      <div key={idx} className={`relative pl-8 border-l-2 ${idx % 2 === 0 ? 'border-emerald-500/20' : 'border-cyan-500/20'}`}>
+                        <div className={`absolute -left-1.5 top-0 w-3 h-3 rounded-full ${idx % 2 === 0 ? 'bg-emerald-500' : 'bg-cyan-500'}`} />
+                        <h5 className="text-xl font-bold mb-3">{feature.title}</h5>
+                        <p className="text-slate-400 leading-relaxed">
+                          {feature.desc}
+                        </p>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-slate-500 italic">Technical focus details coming soon.</p>
+                  )}
                 </div>
               </div>
             </div>
