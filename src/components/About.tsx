@@ -18,7 +18,7 @@ const About = () => {
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-cyan-500 opacity-20 blur-2xl rounded-3xl" />
             <img 
-              src="/image/personal/Photo.jpg" 
+              src="/image/personal/photo.jpg" 
               alt="Personal Photo" 
               className="relative rounded-2xl object-cover w-full aspect-[4/5] shadow-2xl border border-slate-700"
             />
