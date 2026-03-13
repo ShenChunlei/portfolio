@@ -232,7 +232,7 @@ const ProjectDetail = () => {
             Let’s discuss how digital twins and geospatial systems can power smarter infrastructure and cities.
           </p>
           <div className="flex justify-center gap-4">
-            <Link to="/">
+            <Link to="/#contact">
               <Button size="lg" className="rounded-full px-10 bg-emerald-600 hover:bg-emerald-700 text-white">Get in Touch</Button>
             </Link>
           </div>
