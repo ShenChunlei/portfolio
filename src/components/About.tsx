@@ -31,7 +31,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-sm font-bold text-emerald-500 tracking-widest uppercase mb-4">About Me</h2>
-            <h3 className="text-4xl font-bold text-white mb-6">Fusing Space & Time for Digital Twins</h3>
+            <h3 className="text-4xl font-bold text-white mb-6 uppercase">SHEN CHUNLEI</h3>
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
                 I design and develop real-time 3D geospatial platforms that integrate GIS, IoT data, and simulation environments to power next-generation infrastructure and smart city systems.
