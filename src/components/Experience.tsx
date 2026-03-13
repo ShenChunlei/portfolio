@@ -18,10 +18,10 @@ const Experience = () => {
       description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     },
     {
-      role: "3D Concept Artist / Environment Developer",
-      company: "Cesil & Co",
-      period: "2021",
-      description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
+      role: "3D Visualizer",
+      company: "VisualMediaWorks",
+      period: "2010 - 2018",
+      description: "Created architectural visualizations and animations from 2D design data and introduced Lumion workflows to improve production efficiency."
     }
   ];
 
