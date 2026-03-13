@@ -122,8 +122,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/bahrain/bahrain-data-visualization.jpg",
       tags: ["GIS Visualization", "Data Analytics"],
       features: [
-        { title: "Public Health Monitoring", desc: "Geospatial visualization of health metrics across administrative districts." },
-        { title: "National Analytics Hub", desc: "Centralized data pipeline for government-wide spatial decision support." }
+        { title: "National-Scale Digital Twin Platform", desc: "Developed a digital twin platform for Bahrain integrating multiple urban and operational datasets." },
+        { title: "Healthcare Data Integration", desc: "Integrated hospital patient source data and disease transmission datasets for public health monitoring and analysis." },
+        { title: "Event Monitoring Visualization", desc: "Implemented monitoring and visualization systems for major events including Bahrain F1 race operations." },
+        { title: "Multi-Source Data Integration", desc: "Designed data pipelines to combine healthcare, urban, and event datasets within the digital twin environment." }
       ],
       screenshots: [
         { url: "image/screenshots/bahrain/bahrain-data-visualization.jpg", title: "Analytics Hub", desc: "Centralized dashboard for government metrics." },
