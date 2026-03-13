@@ -12,9 +12,9 @@ const Experience = () => {
       description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
     },
     {
-      role: "Geospatial Systems Developer",
-      company: "SmartCity Labs",
-      period: "2020 - 2022",
+      role: "3D Concept Artist / Environment Developer",
+      company: "Cesil & Co",
+      period: "2021",
       description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     },
     {
