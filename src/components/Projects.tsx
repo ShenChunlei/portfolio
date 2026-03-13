@@ -46,11 +46,11 @@ const Projects = () => {
       tags: ["GIS Analysis", "Satellite Imagery", "Spatial Data Processing", "Urban Planning Data", "Geospatial Visualization"],
     },
     {
-      id: "smart-port",
-      title: "Autonomous Port Twin",
-      description: "Digital simulation of port operations for optimizing container logistics.",
-      image: "https://images.unsplash.com/photo-1524522173746-f628baad3644?q=80&w=800&auto=format&fit=crop",
-      tags: ["Unity", "C#", "Simulations"],
+      id: "gitex-singapore-twin",
+      title: "GITEX Singapore Digital Twin",
+      description: "Built a Singapore digital twin platform integrating satellite imagery, 3D geospatial mapping, and real-time traffic and maritime data from DataMall and marine APIs.",
+      image: "image/screenshots/gitex/gitex-datamall-traffic.jpg",
+      tags: ["Unreal Engine", "LTA DataMall API", "Marine / Maritime API", "Geospatial Data Integration"],
     },
     {
       id: "ar-navigation",
