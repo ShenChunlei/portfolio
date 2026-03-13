@@ -67,11 +67,11 @@ const Projects = () => {
       tags: ["Digital Twin", "3D City Visualization", "Smart City Simulation", "GIS Integration", "Unreal Engine"],
     },
     {
-      id: "digital-campus",
-      title: "Digital University Campus",
-      description: "A comprehensive 3D model of a campus integrated with facility management data.",
-      image: "https://images.unsplash.com/photo-152305085306e-8c3d3e009fe5?q=80&w=800&auto=format&fit=crop",
-      tags: ["Cesium", "React", "BIM"],
+      id: "leap-madinah",
+      title: "LEAP Madinah",
+      description: "Built a Madinah digital twin for the LEAP exhibition featuring large-scale 3D city visualization and dynamic day–night simulation within an interactive digital map.",
+      image: "image/screenshots/madinah/madinah-lod2-night.jpg",
+      tags: ["Digital Twin", "3D City Visualization", "Day–Night Simulation", "Smart City Visualization"],
     }
   ];
 
