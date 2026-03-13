@@ -15,13 +15,13 @@ const Experience = () => {
       role: "Geospatial Systems Developer",
       company: "SmartCity Labs",
       period: "2020 - 2022",
-      description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
+      description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     },
     {
       role: "IoT Solutions Engineer",
       company: "SensorGrid Tech",
       period: "2018 - 2020",
-      description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
+      description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     }
   ];
 
