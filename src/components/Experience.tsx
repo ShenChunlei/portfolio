@@ -18,9 +18,9 @@ const Experience = () => {
       description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     },
     {
-      role: "IoT Solutions Engineer",
-      company: "SensorGrid Tech",
-      period: "2018 - 2020",
+      role: "3D Concept Artist / Environment Developer",
+      company: "Cesil & Co",
+      period: "2021",
       description: "Created environment assets, landscapes, and lighting setups for Unity-based mobile games to enhance gameplay environments."
     }
   ];
