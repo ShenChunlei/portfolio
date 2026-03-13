@@ -29,7 +29,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10 leading-relaxed font-light">
-          I bridge the gap between complex GIS geospatial data and real-time IoT sensor streams to build high-fidelity, interactive Digital Twin environments.
+          Senior Digital Twin Engineer building real-time 3D geospatial platforms with Unreal Engine, integrating GIS, IoT, and web-based monitoring systems.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
