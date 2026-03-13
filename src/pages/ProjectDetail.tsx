@@ -106,8 +106,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/gitex/gitex-datamall-traffic.jpg",
       tags: ["DataMall API", "Maritime API", "Unreal Engine"],
       features: [
-        { title: "City-Scale Integration", desc: "Connecting LTA DataMall and maritime APIs for a unified live city view." },
-        { title: "High-Traffic Simulation", desc: "Rendering thousands of dynamic agents based on real-world traffic telemetry." }
+        { title: "City-Scale Digital Twin Environment", desc: "Developed a large-scale Singapore digital twin integrating satellite imagery and 3D geospatial mapping." },
+        { title: "Real-Time Data Integration", desc: "Integrated live urban datasets including traffic and maritime data through DataMall and marine APIs." },
+        { title: "Urban Mobility Visualization", desc: "Implemented real-time visualization of transportation and vessel movements within the digital twin environment." },
+        { title: "Geospatial Data Integration", desc: "Combined satellite imagery and spatial datasets to support large-scale urban digital twin visualization." }
       ],
       screenshots: [
         { url: "image/screenshots/gitex/gitex-datamall-traffic.jpg", title: "Traffic Intelligence", desc: "Live traffic flow from LTA DataMall." },
