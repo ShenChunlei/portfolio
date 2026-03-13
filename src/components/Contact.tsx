@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, MapPin, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -17,6 +17,12 @@ const Contact = () => {
       label: "LinkedIn",
       value: "shen-chunlei-34211323",
       href: "https://www.linkedin.com/in/shen-chunlei-34211323/"
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Singapore",
+      href: null
     }
   ];
 
@@ -56,15 +62,19 @@ const Contact = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-xs font-black uppercase tracking-widest text-slate-500 mb-1">{info.label}</p>
-                    <a 
-                      href={info.href} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-lg font-bold text-slate-200 hover:text-emerald-400 transition-colors flex items-center gap-2"
-                    >
-                      {info.value}
-                      <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </a>
+                    {info.href ? (
+                      <a 
+                        href={info.href} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-lg font-bold text-slate-200 hover:text-emerald-400 transition-colors flex items-center gap-2"
+                      >
+                        {info.value}
+                        <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    ) : (
+                      <p className="text-lg font-bold text-slate-200">{info.value}</p>
+                    )}
                   </div>
                 </div>
               </div>
