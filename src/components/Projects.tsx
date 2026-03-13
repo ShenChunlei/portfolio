@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ImageOff } from 'lucide-react';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -92,19 +92,31 @@ const Projects = () => {
               transition={{ delay: idx * 0.05 }}
             >
               <Card className="overflow-hidden border-slate-800 bg-slate-950/50 group hover:border-emerald-500/50 transition-all h-full flex flex-col">
-                <div className="relative overflow-hidden h-48">
+                <div className="relative overflow-hidden h-48 bg-slate-900 flex items-center justify-center">
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" 
+                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      // 如果加载失败，显示一个占位色块和图标
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        const fallback = document.createElement('div');
+                        fallback.className = 'flex flex-col items-center justify-center text-slate-600';
+                        fallback.innerHTML = '<div class="mb-2 text-slate-700">Image not found</div>';
+                        parent.appendChild(fallback);
+                      }
+                    }}
                   />
-                  <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors" />
+                  <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors pointer-events-none" />
                 </div>
                 <CardHeader className="pt-6">
                   <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">{project.title}</h3>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-slate-400 text-sm mb-4 leading-relaxed">{project.description}</p>
+                  <p className="text-slate-400 text-sm mb-4 leading-relaxed line-clamp-3">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, tagIdx) => (
                       <span key={tagIdx} className="text-[10px] uppercase tracking-wider font-bold text-slate-500 bg-slate-900 px-2 py-1 rounded">
