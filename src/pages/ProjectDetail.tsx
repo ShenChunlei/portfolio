@@ -229,7 +229,7 @@ const ProjectDetail = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Interested in this project?</h2>
           <p className="text-slate-400 text-lg mb-10">
-            Let's discuss how digital twins can transform your infrastructure monitoring or urban planning efforts.
+            Let’s discuss how digital twins and geospatial systems can power smarter infrastructure and cities.
           </p>
           <div className="flex justify-center gap-4">
             <Link to="/">
