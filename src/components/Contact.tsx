@@ -88,10 +88,6 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-
-      <div className="mt-24 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>© {new Date().getFullYear()} Software Engineer Portfolio. Built with React & Dyad.</p>
-      </div>
     </section>
   );
 };
