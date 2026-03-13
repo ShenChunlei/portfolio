@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
-      role: "Lead Digital Twin Engineer",
-      company: "GeoStream Analytics",
+      role: "Senior Software Engineer",
+      company: "Vizzio Technologies",
       period: "2022 - Present",
       description: "Built scalable digital twin platforms integrating GIS, IoT data, and real-time monitoring within Unreal Engine–based 3D geospatial environments."
     },
