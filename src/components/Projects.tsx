@@ -25,11 +25,11 @@ const Projects = () => {
       tags: ["GIS", "QGIS", "UNREAL ENGINE", "SOCKET", "RASTER", "VECTOR"],
     },
     {
-      id: "unreal-gis",
-      title: "Unreal GIS Platform",
-      description: "Interactive 3D geospatial platform built with Unreal Engine for urban planning.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-      tags: ["UE5", "GIS", "C++"],
+      id: "keppel-command-center",
+      title: "Keppel Command Center",
+      description: "Built a real-time Unreal Engine digital twin platform for industrial infrastructure monitoring with integrated operational data and predictive analytics.",
+      image: "image/screenshots/keppel/keppel-iot-facility-1.jpg",
+      tags: ["IOT", "WEBSOCKET", "UNREAL ENGINE", "DIGITAL TWIN", "REST API"],
     },
     {
       id: "iot-dashboard",
