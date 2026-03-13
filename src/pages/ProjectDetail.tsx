@@ -151,9 +151,8 @@ const ProjectDetail = () => {
       <main className="max-w-5xl mx-auto px-6 py-12">
         <Tabs defaultValue="visuals" className="w-full">
           <TabsList className="bg-slate-900/50 border border-slate-800 p-1 mb-12 h-auto flex-wrap justify-start">
-            <TabsTrigger value="visuals" className="px-8 py-3 data-[state=active]:bg-emerald-600 data-[state=active]:text-white">Visual Case Study</TabsTrigger>
+            <TabsTrigger value="visuals" className="px-8 py-3 data-[state=active]:bg-emerald-600 data-[state=active]:text-white">Project Description</TabsTrigger>
             <TabsTrigger value="architecture" className="px-8 py-3">Technical Stack</TabsTrigger>
-            <TabsTrigger value="impact" className="px-8 py-3">Metrics</TabsTrigger>
           </TabsList>
 
           <TabsContent value="visuals" className="space-y-16">
@@ -224,28 +223,6 @@ const ProjectDetail = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="impact">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { label: "Rendering", value: "60 FPS", desc: "Smooth real-time experience" },
-                { label: "Sync Latency", value: "< 200ms", desc: "Sensor to digital mirror" },
-                { label: "Data Sources", value: "Multi-API", desc: "Distributed integration" },
-                { label: "Resolution", value: "4K Ready", desc: "Large scale display support" }
-              ].map((stat, i) => (
-                <motion.div 
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  className="p-8 bg-slate-900 rounded-3xl border border-slate-800 text-center"
-                >
-                  <p className="text-xs text-slate-500 uppercase font-black tracking-widest mb-4">{stat.label}</p>
-                  <p className="text-3xl font-black text-emerald-400 mb-2">{stat.value}</p>
-                  <p className="text-sm text-slate-500">{stat.desc}</p>
-                </motion.div>
-              ))}
             </div>
           </TabsContent>
         </Tabs>
