@@ -34,10 +34,7 @@ const About = () => {
             <h3 className="text-4xl font-bold text-white mb-6">Fusing Space & Time for Digital Twins</h3>
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
-                I am a <strong>Digital Twin and Geospatial Systems Engineer</strong> building real-time 3D platforms using <strong>Unreal Engine</strong>.
-              </p>
-              <p>
-                My work focuses on integrating geospatial data, IoT sensor streams, and real-time visualization systems to create digital twin platforms for infrastructure, smart cities, and industrial monitoring. I specialize in bridging GIS analytics and simulation environments, enabling spatial data to drive interactive 3D systems for decision-making and operational monitoring.
+                I design and develop real-time 3D geospatial platforms that integrate GIS, IoT data, and simulation environments to power next-generation infrastructure and smart city systems.
               </p>
               
               <div className="grid grid-cols-1 gap-4 pt-4">
