@@ -20,7 +20,7 @@ const Hero = () => {
         className="text-center z-10"
       >
         <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-400 uppercase bg-emerald-400/10 rounded-full border border-emerald-400/20">
-          <Globe size={14} className="animate-spin-slow" /> GIS + IoT Integration Expert
+          <Globe size={14} className="animate-spin-slow" /> Senior Digital Twin & Geospatial Systems Engineer
         </span>
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-white mb-6 leading-tight">
           Mirroring Reality with <br />
