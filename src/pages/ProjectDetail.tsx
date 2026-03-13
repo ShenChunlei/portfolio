@@ -74,8 +74,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/ai-assist/ai-assist-iot-cctv.jpg",
       tags: ["LLM", "AI", "IoT"],
       features: [
-        { title: "LLM Orchestration", desc: "Using large language models to translate natural language queries into spatial data visualizations." },
-        { title: "Dynamic Widget Generation", desc: "Automated UI generation for IoT sensors based on semantic context." }
+        { title: "LLM-Assisted Development Workflow", desc: "Designed LLM-driven workflows to accelerate the development of digital twin web dashboards and UI components." },
+        { title: "Real-Time Data Visualization", desc: "Built web dashboards for real-time visualization of spatial and IoT sensor data." },
+        { title: "Web–3D System Integration", desc: "Implemented connections between dashboard interfaces and digital twin systems for monitoring and data interaction." },
+        { title: "Rapid UI Prototyping", desc: "Leveraged AI-assisted tools to speed up UI development and improve iteration efficiency." }
       ],
       screenshots: [
         { url: "image/screenshots/ai-assist/ai-assist-dashboard.jpg", title: "AI Dashboard Generator", desc: "Automated widget creation based on natural language queries." },
