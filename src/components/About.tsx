@@ -4,9 +4,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, Map } from 'lucide-react';
 
-// 使用 import 导入图片，Vite 会自动处理部署路径
-// 假设图片在 public/image/personal/photo.jpg，
-// 在 Vite 中建议将此类资源放在 src/assets 下或使用绝对路径导入
 const About = () => {
   return (
     <section id="about" className="py-24 px-4 bg-slate-900 border-y border-slate-800">
@@ -21,16 +18,9 @@ const About = () => {
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-cyan-500 opacity-20 blur-2xl rounded-3xl" />
             <img 
-              src={`${import.meta.env.BASE_URL}image/personal/photo.jpg`}
+              src="image/personal/photo.jpg" 
               alt="Personal Photo" 
               className="relative rounded-2xl object-cover w-full aspect-[4/5] shadow-2xl border border-slate-700"
-              onError={(e) => {
-                // 备选方案：如果动态路径失败，尝试相对路径
-                const target = e.target as HTMLImageElement;
-                if (target.src.includes(import.meta.env.BASE_URL)) {
-                  target.src = "image/personal/photo.jpg";
-                }
-              }}
             />
           </motion.div>
           
