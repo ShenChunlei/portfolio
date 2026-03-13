@@ -122,42 +122,33 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
       
-      <div className="relative h-[60vh] w-full overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title} 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-        
-        <div className="absolute bottom-12 left-0 w-full px-6">
-          <div className="max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+      <div className="pt-32 pb-12 px-6">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <button 
+              onClick={() => navigate("/")}
+              className="flex items-center gap-2 text-emerald-400 font-medium mb-8 hover:translate-x-[-4px] transition-transform"
             >
-              <button 
-                onClick={() => navigate("/")}
-                className="flex items-center gap-2 text-emerald-400 font-medium mb-6 hover:translate-x-[-4px] transition-transform"
-              >
-                <ArrowLeft size={18} /> Back to Portfolio
-              </button>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 bg-emerald-500/20 rounded-2xl backdrop-blur-xl border border-emerald-500/30">
-                  <Globe className="text-emerald-400" size={32} />
-                </div>
-                <h1 className="text-3xl md:text-5xl font-black tracking-tighter">{project.title}</h1>
+              <ArrowLeft size={18} /> Back to Portfolio
+            </button>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-emerald-500/20 rounded-2xl backdrop-blur-xl border border-emerald-500/30">
+                <Globe className="text-emerald-400" size={32} />
               </div>
-              <p className="text-lg text-slate-300 max-w-2xl leading-relaxed">
-                {project.description}
-              </p>
-            </motion.div>
-          </div>
+              <h1 className="text-3xl md:text-5xl font-black tracking-tighter">{project.title}</h1>
+            </div>
+            <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">
+              {project.description}
+            </p>
+          </motion.div>
         </div>
       </div>
 
-      <main className="max-w-5xl mx-auto px-6 py-20">
+      <main className="max-w-5xl mx-auto px-6 py-12">
         <Tabs defaultValue="visuals" className="w-full">
           <TabsList className="bg-slate-900/50 border border-slate-800 p-1 mb-12 h-auto flex-wrap justify-start">
             <TabsTrigger value="visuals" className="px-8 py-3 data-[state=active]:bg-emerald-600 data-[state=active]:text-white">Visual Case Study</TabsTrigger>
