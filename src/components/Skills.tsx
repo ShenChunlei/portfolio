@@ -41,7 +41,7 @@ const Skills = () => {
     <section id="skills" className="py-24 px-4 bg-slate-950">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">Technical Ecosystem</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Technical Skills</h2>
           <p className="text-slate-500">The technology stack I use to synchronize physical and digital worlds.</p>
         </div>
 
