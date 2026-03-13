@@ -1,10 +1,18 @@
 "use client";
 
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { cn } from "../lib/utils";
 import { Code2, User, Briefcase, Mail, Cpu } from 'lucide-react';
 
 const Navbar = () => {
+  const location = useLocation();
+  
+  // 如果路径包含 /project，则不渲染导航栏
+  if (location.pathname.includes('/project')) {
+    return null;
+  }
+
   const navItems = [
     { name: 'About', href: '#about', icon: User },
     { name: 'Skills', href: '#skills', icon: Cpu },
@@ -20,7 +28,7 @@ const Navbar = () => {
     
     if (elem) {
       window.scrollTo({
-        top: elem.offsetTop - 80, // 减去一些偏移量，避免内容被导航栏遮挡
+        top: elem.offsetTop - 80,
         behavior: 'smooth',
       });
     }

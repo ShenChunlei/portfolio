@@ -10,7 +10,6 @@ import {
   Map, Cpu, Zap, BarChart3, Globe, Shield, 
   Image as ImageIcon, ArrowLeft, Github, ExternalLink 
 } from 'lucide-react';
-import Navbar from '../components/Navbar';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
@@ -120,8 +119,6 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      <Navbar />
-      
       <div className="pt-32 pb-12 px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
