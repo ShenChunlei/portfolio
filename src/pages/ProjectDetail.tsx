@@ -138,8 +138,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/leap/leap-facility.jpg",
       tags: ["Digital Twin", "Unreal Engine", "GIS"],
       features: [
-        { title: "LOD Optimization", desc: "Handling massive city datasets with seamless Level of Detail transitions." },
-        { title: "Urban Simulation", desc: "Agent-based modeling of pedestrian and vehicle movement in high-density areas." }
+        { title: "City-Scale 3D Visualization", desc: "Developed a large-scale 3D digital twin of Riyadh for the LEAP exhibition using high-resolution geospatial data." },
+        { title: "District-Level Simulation", desc: "Created a detailed digital twin simulation of the MISK City district for urban planning and visualization." },
+        { title: "Interactive Exhibition Display", desc: "Designed the system for large-scale exhibition display showcasing city-scale digital twin environments." },
+        { title: "Geospatial Data Integration", desc: "Integrated geospatial datasets to support accurate large-scale city visualization and district-level detail." }
       ],
       screenshots: [
         { url: "image/screenshots/leap/leap-facility.jpg", title: "MISK City District", desc: "High-detail simulation of urban infrastructure." },
