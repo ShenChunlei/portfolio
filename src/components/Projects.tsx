@@ -14,7 +14,7 @@ const Projects = () => {
       id: "nus-virtual-campus",
       title: "NUS Virtual Campus",
       description: "An interactive digital twin installation showcasing the NUS campus in real time. Visitors navigate the campus using a touchscreen interface, while the 3D environment is projected onto a large public display in University Hall.",
-      image: "/image/screenshots/01-nus/nus-lod1.jpg",
+      image: "/image/screenshots/nus/nus-lod1.jpg",
       tags: ["IOT", "REST API", "WebSocket", "Touch Screen", "Google API", "Digital Twin", "Data Visualization", "BIM"],
     },
     {
