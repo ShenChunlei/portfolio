@@ -3,9 +3,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "./ui/button";
-import { ArrowRight, Github, Linkedin, Mail, Globe } from 'lucide-react';
+import { ArrowRight, Globe } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToProjects = () => {
+    const elem = document.getElementById('projects');
+    if (elem) {
+      window.scrollTo({
+        top: elem.offsetTop - 80,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden bg-slate-950">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -33,14 +43,13 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full px-8 bg-emerald-600 hover:bg-emerald-700 text-white gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+          <Button 
+            onClick={scrollToProjects}
+            size="lg" 
+            className="rounded-full px-8 bg-emerald-600 hover:bg-emerald-700 text-white gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+          >
             Explore My Twins <ArrowRight size={18} />
           </Button>
-          <div className="flex items-center gap-4 ml-0 sm:ml-4 mt-4 sm:mt-0">
-            <a href="#" className="p-2 text-slate-400 hover:text-emerald-400 transition-colors"><Github size={24} /></a>
-            <a href="#" className="p-2 text-slate-400 hover:text-emerald-400 transition-colors"><Linkedin size={24} /></a>
-            <a href="#" className="p-2 text-slate-400 hover:text-emerald-400 transition-colors"><Mail size={24} /></a>
-          </div>
         </div>
       </motion.div>
     </section>
