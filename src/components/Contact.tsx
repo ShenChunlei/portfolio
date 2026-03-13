@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, MapPin, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -11,12 +11,6 @@ const Contact = () => {
       label: "Email",
       value: "chsim.shen@gmail.com",
       href: "mailto:chsim.shen@gmail.com"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "shen-chunlei-34211323",
-      href: "https://www.linkedin.com/in/shen-chunlei-34211323/"
     },
     {
       icon: MapPin,
