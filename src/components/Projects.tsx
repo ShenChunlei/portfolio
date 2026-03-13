@@ -32,11 +32,11 @@ const Projects = () => {
       tags: ["IOT", "WEBSOCKET", "UNREAL ENGINE", "DIGITAL TWIN", "REST API"],
     },
     {
-      id: "iot-dashboard",
-      title: "IoT Sensor Network",
-      description: "Web-based dashboard for monitoring thousands of distributed environmental sensors.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
-      tags: ["React", "MQTT", "D3.js"],
+      id: "ai-assisted-dashboard",
+      title: "AI-assisted Digital Twin Dashboard",
+      description: "Developed LLM-assisted workflows to accelerate creation of real-time dashboards for spatial and IoT data visualization.",
+      image: "image/screenshots/ai-assist/ai-assist-iot-cctv.jpg",
+      tags: ["LLM", "AI", "IOT", "AGENT SKILLS", "PROMPT"],
     },
     {
       id: "arch-viz",
