@@ -18,11 +18,11 @@ const Projects = () => {
       tags: ["IOT", "REST API", "WebSocket", "Touch Screen", "Google API", "Digital Twin", "Data Visualization", "BIM"],
     },
     {
-      id: "industrial-monitor",
-      title: "Industrial 3D Asset Monitor",
-      description: "A high-fidelity Digital Twin of a manufacturing plant using CesiumJS.",
-      image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=800&auto=format&fit=crop",
-      tags: ["CesiumJS", "MQTT", "BIM"],
+      id: "qgis-unreal-integration",
+      title: "QGIS–Unreal Geospatial Integration",
+      description: "Developed a plugin to stream GIS layers from headless QGIS into Unreal Engine with bidirectional synchronization between GIS analytics and simulation environments.",
+      image: "image/screenshots/gis/gis-vector-symbol.jpg",
+      tags: ["GIS", "QGIS", "UNREAL ENGINE", "SOCKET", "RASTER", "VECTOR"],
     },
     {
       id: "unreal-gis",
