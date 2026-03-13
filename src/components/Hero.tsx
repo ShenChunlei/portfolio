@@ -2,17 +2,15 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail, Globe, Cpu } from 'lucide-react';
+import { Button } from "./ui/button";
+import { ArrowRight, Github, Linkedin, Mail, Globe } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden bg-slate-950">
-      {/* 空间感背景装饰 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] animate-pulse delay-1000" />
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
       </div>
 
       <motion.div
@@ -43,22 +41,6 @@ const Hero = () => {
             <a href="#" className="p-2 text-slate-400 hover:text-emerald-400 transition-colors"><Linkedin size={24} /></a>
             <a href="#" className="p-2 text-slate-400 hover:text-emerald-400 transition-colors"><Mail size={24} /></a>
           </div>
-        </div>
-      </motion.div>
-
-      {/* 滚动提示 */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-slate-800 rounded-full flex justify-center p-1">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="w-1 h-2 bg-emerald-500 rounded-full"
-          />
         </div>
       </motion.div>
     </section>

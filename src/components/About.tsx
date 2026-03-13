@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Card, CardContent } from "@/components/ui/card";
 import { Layers, Activity, Map } from 'lucide-react';
 
 const About = () => {
@@ -36,9 +35,6 @@ const About = () => {
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
                 I specialize in creating <strong>Digital Twins</strong> that aren't just 3D models, but living systems. By integrating high-precision <strong>GIS geospatial data</strong> with real-time <strong>IoT connectivity</strong>, I help organizations visualize, monitor, and predict infrastructure health and urban dynamics.
-              </p>
-              <p>
-                My work focuses on the full data lifecycle: from processing massive BIM/GIS point clouds to architecting robust MQTT/WebSocket pipelines for thousands of concurrent sensors.
               </p>
               
               <div className="grid grid-cols-1 gap-4 pt-4">
