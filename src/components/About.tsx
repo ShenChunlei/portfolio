@@ -30,7 +30,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-sm font-bold text-emerald-500 tracking-widest uppercase mb-4">My Expertise</h2>
+            <h2 className="text-sm font-bold text-emerald-500 tracking-widest uppercase mb-4">About Me</h2>
             <h3 className="text-4xl font-bold text-white mb-6">Fusing Space & Time for Digital Twins</h3>
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
