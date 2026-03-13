@@ -39,11 +39,11 @@ const Projects = () => {
       tags: ["LLM", "AI", "IOT", "AGENT SKILLS", "PROMPT"],
     },
     {
-      id: "arch-viz",
-      title: "Architectural Visualizer",
-      description: "Photorealistic real-time architectural walkthroughs using advanced lighting tech.",
-      image: "https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=800&auto=format&fit=crop",
-      tags: ["Lumion", "3ds Max", "V-Ray"],
+      id: "kaec-gis-analysis",
+      title: "King Abdullah Economic City",
+      description: "Conducted GIS-based spatial analysis for the King Abdullah Economic City project using satellite imagery and urban datasets to assess population, land use, and economic investment patterns.",
+      image: "image/screenshots/kaec/kaec-gis-1.jpg",
+      tags: ["GIS Analysis", "Satellite Imagery", "Spatial Data Processing", "Urban Planning Data", "Geospatial Visualization"],
     },
     {
       id: "smart-port",
