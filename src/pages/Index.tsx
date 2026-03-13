@@ -24,7 +24,7 @@ const Index = () => {
       
       <footer className="py-12 border-t border-slate-900 bg-slate-950 text-center">
         <p className="text-slate-500 text-sm">
-          &copy; {new Date().getFullYear()} Digital Twin Portfolio. All rights reserved.
+          &copy; {new Date().getFullYear()} SHEN CHUNLEI. All rights reserved.
         </p>
       </footer>
     </div>
