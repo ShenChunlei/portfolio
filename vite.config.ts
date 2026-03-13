@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: './', // 改为相对路径，这样无论是根域名还是子目录都能完美适配
+  base: '/', // 根域名部署使用 / 最稳妥
   server: {
     host: "::",
     port: 8080,
