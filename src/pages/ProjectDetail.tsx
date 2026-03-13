@@ -41,8 +41,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/gis/gis-vector-symbol.jpg",
       tags: ["GIS", "QGIS", "Unreal Engine", "Socket"],
       features: [
-        { title: "Bidirectional Sync", desc: "Real-time synchronization between QGIS desktop and Unreal Engine environment." },
-        { title: "GIS Data Streaming", desc: "Direct streaming of vector and raster layers without manual export/import workflows." }
+        { title: "Headless GIS Processing", desc: "Developed a plugin enabling headless QGIS execution for automated geospatial data processing and analysis." },
+        { title: "GIS-to-Unreal Data Streaming", desc: "Implemented a pipeline to stream GIS layers directly into Unreal Engine for real-time geospatial visualization." },
+        { title: "Bidirectional Data Synchronization", desc: "Built a two-way integration allowing simulation results in Unreal Engine to interact with GIS analytics workflows." },
+        { title: "Geospatial Data Pipeline Optimization", desc: "Designed scalable data pipelines for handling large spatial datasets and maintaining real-time system performance." }
       ],
       screenshots: [
         { url: "image/screenshots/gis/gis-vector-symbol.jpg", title: "Vector Symbolization", desc: "Styling GIS vector data within the Unreal Engine environment." },
