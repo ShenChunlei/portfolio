@@ -11,11 +11,11 @@ const Projects = () => {
 
   const projects = [
     {
-      id: "traffic-twin",
-      title: "Smart City Traffic Twin",
-      description: "Real-time traffic flow visualization using Mapbox and live camera sensor data via MQTT.",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
-      tags: ["GIS", "IoT", "React"],
+      id: "nus-virtual-campus",
+      title: "NUS Virtual Campus",
+      description: "An interactive digital twin installation showcasing the NUS campus in real time. Visitors navigate the campus using a touchscreen interface, while the 3D environment is projected onto a large public display in University Hall.",
+      image: "/image/screenshots/01-nus/nus-lod1.jpg",
+      tags: ["IOT", "REST API", "WebSocket", "Touch Screen", "Google API", "Digital Twin", "Data Visualization", "BIM"],
     },
     {
       id: "industrial-monitor",
