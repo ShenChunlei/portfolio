@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about" className="py-24 px-4 bg-slate-900 border-y border-slate-800">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
