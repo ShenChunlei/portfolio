@@ -60,11 +60,11 @@ const Projects = () => {
       tags: ["GIS Visualization", "Data Analytics", "Real-time Dashboards", "Event Monitoring"],
     },
     {
-      id: "energy-grid",
-      title: "Smart Grid Monitor",
-      description: "Visualization of real-time power distribution and grid health metrics.",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop",
-      tags: ["Three.js", "WebSockets", "D3"],
+      id: "leap-riyadh",
+      title: "LEAP Riyadh",
+      description: "Created a Riyadh digital twin platform for the LEAP exhibition featuring large-scale 3D city visualization and high-detail simulation of the MISK City district.",
+      image: "image/screenshots/leap/leap-facility.jpg",
+      tags: ["Digital Twin", "3D City Visualization", "Smart City Simulation", "GIS Integration", "Unreal Engine"],
     },
     {
       id: "digital-campus",
