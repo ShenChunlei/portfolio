@@ -90,8 +90,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/kaec/kaec-gis-1.jpg",
       tags: ["GIS Analysis", "Urban Planning"],
       features: [
-        { title: "Spatial Assessment", desc: "In-depth analysis of land use and development patterns." },
-        { title: "Remote Sensing", desc: "Processing satellite data for infrastructure change detection." }
+        { title: "Satellite Imagery Integration", desc: "Integrated satellite imagery with GIS datasets to build a geospatial foundation for urban analysis." },
+        { title: "Spatial Data Analysis", desc: "Performed spatial analysis on population distribution, land use patterns, and economic investment data." },
+        { title: "Urban Development Insights", desc: "Developed geospatial visualizations to support evaluation of urban growth and development strategies." },
+        { title: "Geospatial Data Processing", desc: "Processed large-scale spatial datasets to support analysis of the KAEC development region." }
       ],
       screenshots: [
         { url: "image/screenshots/kaec/kaec-gis-1.jpg", title: "Land Use Analysis", desc: "Spatial assessment of development phases." },
@@ -182,6 +184,13 @@ const ProjectDetail = () => {
                 <Globe className="text-emerald-400" size={32} />
               </div>
               <h1 className="text-3xl md:text-5xl font-black tracking-tighter">{project.title}</h1>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+              {project.tags.map((tag: string) => (
+                <Badge key={tag} className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 px-3 py-1">
+                  {tag}
+                </Badge>
+              ))}
             </div>
             <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">
               {project.description}
