@@ -2,33 +2,27 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Copy, Check } from 'lucide-react';
-import { toast } from "sonner";
+import { Mail, Linkedin, MapPin, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
-  const [copied, setCopied] = React.useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText("chsim.shen@gmail.com");
-    setCopied(true);
-    toast.success("Email copied to clipboard!");
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
       value: "chsim.shen@gmail.com",
-      action: handleCopyEmail,
-      isCopyable: true
+      href: "mailto:chsim.shen@gmail.com"
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "shen-chunlei-34211323",
+      href: "https://www.linkedin.com/in/shen-chunlei-34211323/"
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Singapore",
-      action: null,
-      isCopyable: false
+      href: null
     }
   ];
 
@@ -60,8 +54,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <div 
                 key={index}
-                onClick={info.action ? info.action : undefined}
-                className={`group p-6 bg-slate-900/50 rounded-3xl border border-slate-800 transition-all duration-300 ${info.isCopyable ? 'cursor-pointer hover:border-emerald-500/50' : ''}`}
+                className="group p-6 bg-slate-900/50 rounded-3xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300"
               >
                 <div className="flex items-center gap-6">
                   <div className="p-4 bg-emerald-500/10 rounded-2xl group-hover:bg-emerald-500/20 transition-colors">
@@ -69,16 +62,19 @@ const Contact = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-xs font-black uppercase tracking-widest text-slate-500 mb-1">{info.label}</p>
-                    <div className="flex items-center gap-2">
-                      <p className="text-lg font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                    {info.href ? (
+                      <a 
+                        href={info.href} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-lg font-bold text-slate-200 hover:text-emerald-400 transition-colors flex items-center gap-2"
+                      >
                         {info.value}
-                      </p>
-                      {info.isCopyable && (
-                        <div className="text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                          {copied ? <Check size={16} /> : <Copy size={16} />}
-                        </div>
-                      )}
-                    </div>
+                        <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    ) : (
+                      <p className="text-lg font-bold text-slate-200">{info.value}</p>
+                    )}
                   </div>
                 </div>
               </div>
