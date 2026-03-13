@@ -8,13 +8,13 @@ const About = () => {
   return (
     <section id="about" className="py-24 px-4 bg-slate-900 border-y border-slate-800">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative max-w-xs mx-auto"
+            className="relative max-w-xs mx-auto md:mx-0"
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-cyan-500 opacity-20 blur-2xl rounded-3xl" />
             <img 
