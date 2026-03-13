@@ -14,7 +14,7 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
+            className="relative max-w-xs mx-auto"
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-cyan-500 opacity-20 blur-2xl rounded-3xl" />
             <img 
