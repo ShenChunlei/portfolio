@@ -13,16 +13,33 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact', icon: Mail },
   ];
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = 80; // 考虑到固定导航栏的高度
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-full border border-slate-200 dark:border-slate-800 shadow-lg">
-      <ul className="flex items-center gap-8">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-full border border-slate-200 dark:border-slate-800 shadow-xl">
+      <ul className="flex items-center gap-4 md:gap-8">
         {navItems.map((item) => (
           <li key={item.name}>
             <a
               href={item.href}
-              className="group flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              onClick={(e) => handleScroll(e, item.href)}
+              className="group flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300"
             >
-              <item.icon size={16} className="group-hover:scale-110 transition-transform" />
+              <item.icon size={18} className="group-hover:scale-110 group-hover:rotate-3 transition-transform" />
               <span className="hidden md:inline">{item.name}</span>
             </a>
           </li>
