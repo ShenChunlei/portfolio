@@ -7,20 +7,20 @@ import { Badge } from "./ui/badge";
 const Skills = () => {
   const categories = [
     {
-      title: "Geospatial & 3D",
-      skills: ["CesiumJS", "Three.js", "Mapbox GL JS", "ArcGIS API", "PostGIS", "Deck.gl"]
+      title: "Real-Time 3D & Simulation",
+      skills: ["Unreal Engine (Blueprint & C++)", "Real-time rendering pipelines", "Interactive 3D systems", "Simulation environments", "LOD systems", "Rendering optimization"]
     },
     {
-      title: "IoT & Real-time",
-      skills: ["MQTT / Mosquitto", "WebSockets", "Apache Kafka", "InfluxDB", "AWS IoT Core", "Node-RED"]
+      title: "Digital Twin & Geospatial",
+      skills: ["Digital twin platforms", "GIS visualization", "Geospatial data integration", "Spatial data processing", "IoT data visualization", "Spatial analytics"]
     },
     {
-      title: "Data & Backend",
-      skills: ["Python (GDAL/Pandas)", "Node.js", "Go", "PostgreSQL", "Redis", "gRPC"]
+      title: "Geospatial Systems & Data Pipelines",
+      skills: ["QGIS", "Headless GIS processing", "Geospatial data pipelines", "Spatial layer streaming", "Large-scale spatial datasets"]
     },
     {
-      title: "Digital Twin Standards",
-      skills: ["BIM (IFC/Revit)", "CityGML", "3D Tiles", "DTDL", "Point Cloud Data"]
+      title: "Web Platforms & API Integration",
+      skills: ["JavaScript / Vue.js / Node.js", "REST API & WebSocket", "Real-time monitoring dashboards", "Google Maps API", "HERE Traffic API", "LTA DataMall API", "MPA Maritime Data Hub"]
     }
   ];
 
@@ -53,9 +53,9 @@ const Skills = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {categories.map((cat, idx) => (
-            <motion.div key={idx} variants={item} className="p-6 rounded-2xl border border-slate-800 bg-slate-900 shadow-xl group hover:border-emerald-500/50 transition-all">
-              <h3 className="font-bold text-emerald-400 mb-6 uppercase tracking-widest text-xs">{cat.title}</h3>
-              <div className="flex flex-wrap gap-2">
+            <motion.div key={idx} variants={item} className="p-6 rounded-2xl border border-slate-800 bg-slate-900 shadow-xl group hover:border-emerald-500/50 transition-all flex flex-col">
+              <h3 className="font-bold text-emerald-400 mb-6 uppercase tracking-widest text-xs min-h-[2rem] flex items-center">{cat.title}</h3>
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {cat.skills.map((skill) => (
                   <Badge key={skill} variant="secondary" className="bg-slate-800 text-slate-300 border border-slate-700 hover:bg-emerald-900/30 hover:text-emerald-300 hover:border-emerald-500/30 transition-all duration-300">
                     {skill}
