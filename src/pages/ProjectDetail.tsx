@@ -58,8 +58,10 @@ const ProjectDetail = () => {
       image: "image/screenshots/keppel/keppel-iot-facility-1.jpg",
       tags: ["IoT", "WebSocket", "Digital Twin"],
       features: [
-        { title: "Asset Monitoring", desc: "Real-time health and status tracking of industrial equipment." },
-        { title: "Subsurface Visualization", desc: "Rendering complex underground utility networks with spatial accuracy." }
+        { title: "Industrial Digital Twin Platform", desc: "Developed a real-time digital twin environment in Unreal Engine for monitoring industrial infrastructure and operational systems." },
+        { title: "Operational Data Integration", desc: "Integrated multiple operational datasets to enable real-time visualization and system monitoring within the 3D environment." },
+        { title: "Real-Time Monitoring Dashboard", desc: "Implemented interactive monitoring interfaces connecting infrastructure data with the digital twin visualization platform." },
+        { title: "Scalable Visualization System", desc: "Designed the system to support large-scale infrastructure assets and maintain stable real-time performance." }
       ],
       screenshots: [
         { url: "image/screenshots/keppel/keppel-iot-facility-1.jpg", title: "Facility Monitoring", desc: "Real-time status updates of industrial assets." },
