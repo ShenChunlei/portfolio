@@ -53,11 +53,11 @@ const Projects = () => {
       tags: ["Unreal Engine", "LTA DataMall API", "Marine / Maritime API", "Geospatial Data Integration"],
     },
     {
-      id: "ar-navigation",
-      title: "AR Indoor Navigation",
-      description: "Augmented reality solution for complex indoor facility management.",
-      image: "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop",
-      tags: ["ARKit", "Unity", "GIS"],
+      id: "bahrain-digital-twin",
+      title: "Bahrain Digital Twin",
+      description: "Built a Bahrain government digital twin integrating healthcare data, disease spread analytics, and F1 event monitoring datasets to support real-time visualization and decision-making.",
+      image: "image/screenshots/bahrain/bahrain-data-visualization.jpg",
+      tags: ["GIS Visualization", "Data Analytics", "Real-time Dashboards", "Event Monitoring"],
     },
     {
       id: "energy-grid",
