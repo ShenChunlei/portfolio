@@ -39,7 +39,7 @@ const ProjectDetail = () => {
       title: "QGIS–Unreal Geospatial Integration",
       description: "Developed a plugin to stream GIS layers from headless QGIS into Unreal Engine with bidirectional synchronization.",
       image: "image/screenshots/gis/gis-vector-symbol.jpg",
-      tags: ["GIS", "QGIS", "Unreal Engine", "Socket"],
+      tags: ["GIS", "QGIS", "Unreal Engine", "Python", "C++", "Socket"],
       features: [
         { title: "Headless GIS Processing", desc: "Developed a plugin enabling headless QGIS execution for automated geospatial data processing and analysis." },
         { title: "GIS-to-Unreal Data Streaming", desc: "Implemented a pipeline to stream GIS layers directly into Unreal Engine for real-time geospatial visualization." },
