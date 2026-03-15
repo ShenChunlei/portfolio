@@ -8,7 +8,7 @@ const Skills = () => {
   const categories = [
     {
       title: "Real-Time 3D & Simulation",
-      skills: ["Unreal Engine (Blueprint & C++)", "Real-time rendering pipelines", "Interactive 3D systems", "Simulation environments", "LOD systems", "Rendering optimization"]
+      skills: ["Unreal Engine (Blueprint & C++)", "Blender(Python)", "Real-time rendering pipelines", "Interactive 3D systems", "Simulation environments", "LOD systems", "Rendering optimization"]
     },
     {
       title: "Digital Twin & Geospatial",
