@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       title: "Geospatial Systems & Data Pipelines",
-      skills: ["QGIS", "ArcGIS", "Headless GIS processing", "Geospatial data pipelines", "Spatial layer streaming", "Large-scale spatial datasets"]
+      skills: ["QGIS", "ArcGIS", "Python", "Headless GIS processing", "Geospatial data pipelines", "Spatial layer streaming", "Large-scale spatial datasets"]
     },
     {
       title: "Web Platforms & API Integration",
