@@ -22,7 +22,7 @@ const Projects = () => {
       title: "QGIS–Unreal Geospatial Integration",
       description: "Developed a plugin to stream GIS layers from headless QGIS into Unreal Engine with bidirectional synchronization between GIS analytics and simulation environments.",
       image: "image/screenshots/gis/gis-vector-symbol.jpg",
-      tags: ["GIS", "QGIS", "UNREAL ENGINE", "SOCKET", "RASTER", "VECTOR"],
+      tags: ["GIS", "QGIS", "UNREAL ENGINE", "PYTHON", "C++", "SOCKET", "RASTER", "VECTOR"],
     },
     {
       id: "keppel-command-center",
