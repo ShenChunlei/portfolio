@@ -20,7 +20,7 @@ const Skills = () => {
     },
     {
       title: "Web Platforms & API Integration",
-      skills: ["Python", "JavaScript / Vue.js / Node.js", "REST API & WebSocket", "Real-time monitoring dashboards", "Google Maps API", "HERE Traffic API", "LTA DataMall API", "MPA Maritime Data Hub"]
+      skills: ["JavaScript / Vue.js / Node.js", "REST API & WebSocket", "Real-time monitoring dashboards", "Google Maps API", "HERE Traffic API", "LTA DataMall API", "MPA Maritime Data Hub"]
     }
   ];
 
