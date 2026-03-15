@@ -55,9 +55,13 @@ const Skills = () => {
           {categories.map((cat, idx) => (
             <motion.div key={idx} variants={item} className="p-6 rounded-2xl border border-slate-800 bg-slate-900 shadow-xl group hover:border-emerald-500/50 transition-all flex flex-col">
               <h3 className="font-bold text-emerald-400 mb-6 uppercase tracking-widest text-xs min-h-[2rem] flex items-center">{cat.title}</h3>
-              <div className="flex flex-wrap gap-2 mt-auto">
+              <div className="flex flex-col gap-2 mt-auto">
                 {cat.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-slate-800 text-slate-300 border border-slate-700 hover:bg-emerald-900/30 hover:text-emerald-300 hover:border-emerald-500/30 transition-all duration-300">
+                  <Badge 
+                    key={skill} 
+                    variant="secondary" 
+                    className="w-full justify-start py-1.5 px-3 bg-slate-800 text-slate-300 border border-slate-700 hover:bg-emerald-900/30 hover:text-emerald-300 hover:border-emerald-500/30 transition-all duration-300"
+                  >
                     {skill}
                   </Badge>
                 ))}
